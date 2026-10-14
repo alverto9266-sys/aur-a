@@ -44,6 +44,34 @@ window.matchMedia('(min-width: 801px)').addEventListener('change', event => {
   if (event.matches) setMenuOpen(false);
 });
 
+const planCards = [...document.querySelectorAll('.plan-card')];
+const planDetail = document.querySelector('#plan-detail');
+
+function selectPlan(card) {
+  planCards.forEach(item => {
+    const selected = item === card;
+    item.classList.toggle('is-selected', selected);
+    item.querySelector('.plan-select').setAttribute('aria-pressed', String(selected));
+  });
+
+  const label = document.createElement('p');
+  label.className = 'plan-detail-label';
+  label.textContent = 'QUÉ INCLUYE ESTE PLAN';
+  const title = document.createElement('h3');
+  title.textContent = card.querySelector('h3').textContent;
+  const description = card.querySelector('.plan-description').cloneNode(true);
+  const features = card.querySelector('ul').cloneNode(true);
+  const link = card.querySelector('.plan-button').cloneNode(true);
+  link.setAttribute('aria-label', `Consultar el plan ${title.textContent} por WhatsApp`);
+  planDetail.replaceChildren(label, title, description, features, link);
+}
+
+planCards.forEach(card => {
+  card.querySelector('.plan-select').addEventListener('click', () => selectPlan(card));
+});
+selectPlan(planCards[1]);
+document.documentElement.classList.add('plans-ready');
+
 function updateCountdown() {
   const eventDate = new Date('2026-12-13T00:00:00-03:00');
   const remaining = Math.max(0, eventDate.getTime() - Date.now());
