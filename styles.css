@@ -553,48 +553,59 @@ body {
 }
 
 .btn-example-action {
-  display: inline-flex;
+  display: flex;
+  width: 100%;
   align-items: center;
   justify-content: center;
-  gap: 0.6rem;
-  background: var(--accent-gold);
-  color: #0b0c14;
+  gap: 0.65rem;
   font-weight: 800;
-  font-size: 0.92rem;
-  padding: 0.9rem 1.4rem;
-  border-radius: var(--radius-sm);
+  font-size: 0.96rem;
+  padding: 1rem 1.4rem;
+  border-radius: 12px;
   text-decoration: none;
   transition: all 0.2s ease;
-  box-shadow: 0 4px 16px rgba(212, 175, 55, 0.25);
   margin-top: auto;
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  box-sizing: border-box;
 }
 
+.btn-example-18,
 .theme-card-18 .btn-example-action {
-  background: linear-gradient(135deg, #00f2fe 0%, #4facfe 100%);
-  color: #050608;
-  box-shadow: 0 4px 18px rgba(0, 242, 254, 0.35);
+  background: linear-gradient(135deg, #00f2fe 0%, #0077ff 100%) !important;
+  color: #030811 !important;
+  border-color: rgba(0, 242, 254, 0.6) !important;
+  box-shadow: 0 4px 20px rgba(0, 242, 254, 0.35) !important;
 }
 
+.btn-example-15,
 .theme-card-15 .btn-example-action {
-  background: linear-gradient(135deg, #d4af37 0%, #f6e05e 100%);
-  color: #0c0b05;
-  box-shadow: 0 4px 18px rgba(212, 175, 55, 0.35);
+  background: linear-gradient(135deg, #ffd700 0%, #d4af37 100%) !important;
+  color: #120e04 !important;
+  border-color: rgba(255, 215, 0, 0.6) !important;
+  box-shadow: 0 4px 20px rgba(212, 175, 55, 0.35) !important;
 }
 
+.btn-example-boda,
 .theme-card-boda .btn-example-action {
-  background: linear-gradient(135deg, #e6d5b8 0%, #c5a880 100%);
-  color: #12100e;
-  box-shadow: 0 4px 18px rgba(197, 168, 128, 0.35);
+  background: linear-gradient(135deg, #f5e6d3 0%, #c5a880 100%) !important;
+  color: #1a140c !important;
+  border-color: rgba(230, 213, 184, 0.6) !important;
+  box-shadow: 0 4px 20px rgba(197, 168, 128, 0.35) !important;
 }
 
 .btn-example-action:hover {
   transform: translateY(-2px);
-  filter: brightness(1.1);
-  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.5);
+  filter: brightness(1.12);
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.5) !important;
+}
+
+.btn-example-action:active {
+  transform: scale(0.98);
 }
 
 .btn-example-action svg {
   transition: transform 0.2s ease;
+  flex-shrink: 0;
 }
 
 .btn-example-action:hover svg {
