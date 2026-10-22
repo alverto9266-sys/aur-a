@@ -59,73 +59,72 @@
       </div>
     </section>
 
-    <!-- Simulador Interactivo de Estilos (Con las 3 invitaciones reales de GitHub) -->
+    <!-- Ejemplos Reales de Invitaciones (Con botón directo a cada una) -->
     <section id="demo" class="demo-section">
       <div class="container">
         
         <div class="section-head text-center">
-          <span class="sub-badge">DEMO INTERACTIVA & ENLACES EN VIVO</span>
-          <h2>Elegí un ejemplo y probalo</h2>
-          <p>Mirá cómo se adapta cada tarjeta según el tipo de evento. Podés probarla en el teléfono interactivo o abrir la web completa publicada:</p>
+          <span class="sub-badge">DEMOSTRACIONES EN VIVO</span>
+          <h2>Ejemplos de nuestras tarjetas</h2>
+          <p>Tocá el botón del ejemplo que quieras ver para abrir la invitación real en vivo:</p>
         </div>
 
-        <!-- Selector de Estilos con enlaces directos -->
-        <div class="style-switcher">
-          <button class="style-tab active" data-style="dieciocho">
-            <span class="tab-badge">⚡ Canchero / 18 Años</span>
-            <span class="tab-title">Alvaro (18 años)</span>
-          </button>
-          <button class="style-tab" data-style="quince">
-            <span class="tab-badge">👑 Delicado / 15 Años</span>
-            <span class="tab-title">Isabella (15 años)</span>
-          </button>
-          <button class="style-tab" data-style="boda">
-            <span class="tab-badge">💍 Formal / Boda</span>
-            <span class="tab-title">Tiziano & Kiara (Boda)</span>
-          </button>
-        </div>
-
-        <!-- Enlace destacado para abrir la invitación real en vivo -->
-        <div class="live-demo-banner text-center">
-          <div class="live-demo-info">
-            <span class="live-indicator">● EN VIVO</span>
-            <span class="live-title-text" id="liveDemoText">Invitación real: Alvaro (18 años)</span>
-          </div>
-          <div class="live-demo-actions">
-            <button class="btn-live-reload" id="btnReloadIframe" title="Reiniciar demostración">
-              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M21.5 2v6h-6M21.34 15.57a10 10 0 1 1-.57-8.38l5.67-5.67"/></svg>
-              <span>Reiniciar</span>
-            </button>
-            <a href="https://alverto9266-sys.github.io/AlvaroLara18/" target="_blank" rel="noopener noreferrer" class="btn-live-link" id="liveDemoLink">
-              <span>Abrir web en pantalla completa</span>
-              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1 2-2h6M15 3h6v6M10 14L21 3"/></svg>
+        <div class="examples-grid">
+          
+          <!-- Ejemplo 1: 18 Años (Alvaro) -->
+          <div class="example-card theme-card-18">
+            <div class="example-badge">⚡ MODO NOCHE / VIP</div>
+            <h3 class="example-title">Alvaro</h3>
+            <span class="example-subtitle">Ejemplo de tarjeta de 18</span>
+            <p class="example-desc">Estilo canchero con pase VIP de ingreso, música de fondo con reproductor, partículas animadas, mapa GPS, Spotify y cuenta regresiva.</p>
+            <div class="example-features-tags">
+              <span>🎵 Música</span>
+              <span>⚡ Pase VIP</span>
+              <span>📍 Mapa GPS</span>
+              <span>🎁 Alias MP</span>
+            </div>
+            <a href="https://alverto9266-sys.github.io/AlvaroLara18/" target="_blank" rel="noopener noreferrer" class="btn-example-action">
+              <span>Ver ejemplo de 18 años</span>
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6M15 3h6v6M10 14L21 3"/></svg>
             </a>
           </div>
-        </div>
 
-        <!-- El Celular con la Vista Previa REAL embebida -->
-        <div class="simulator-wrapper">
-          <div class="phone-frame">
-            <div class="phone-island"></div>
-            
-            <div class="phone-screen" id="invitationScreen">
-              <!-- Loader mientras carga la web real -->
-              <div class="phone-loader" id="phoneLoader">
-                <div class="spinner"></div>
-                <span>Cargando invitación en vivo...</span>
-              </div>
-
-              <!-- Iframe que carga la página REAL de GitHub Pages -->
-              <iframe 
-                id="phoneIframe" 
-                src="https://alverto9266-sys.github.io/AlvaroLara18/" 
-                class="phone-iframe" 
-                title="Invitación digital interactiva real"
-                allow="autoplay; accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
-                allowfullscreen>
-              </iframe>
+          <!-- Ejemplo 2: 15 Años (Isabella) -->
+          <div class="example-card theme-card-15">
+            <div class="example-badge">👑 DELICADO & MÁGICO</div>
+            <h3 class="example-title">Isabella</h3>
+            <span class="example-subtitle">Ejemplo de tarjeta de 15</span>
+            <p class="example-desc">Diseño delicado con apertura de sobre virtual, destellos dorados, música sincronizada, código de vestimenta y confirmación a planilla.</p>
+            <div class="example-features-tags">
+              <span>💌 Sobre Virtual</span>
+              <span>✨ Destellos</span>
+              <span>📊 Planilla Excel</span>
+              <span>👗 Dress Code</span>
             </div>
+            <a href="https://alverto9266-sys.github.io/Isabella/" target="_blank" rel="noopener noreferrer" class="btn-example-action">
+              <span>Ver ejemplo de 15 años</span>
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6M15 3h6v6M10 14L21 3"/></svg>
+            </a>
           </div>
+
+          <!-- Ejemplo 3: Boda (Tiziano & Kiara) -->
+          <div class="example-card theme-card-boda">
+            <div class="example-badge">💍 ELEGANTE & ROMÁNTICO</div>
+            <h3 class="example-title">Tiziano & Kiara</h3>
+            <span class="example-subtitle">Ejemplo de tarjeta para boda</span>
+            <p class="example-desc">Estilo formal para bodas, apertura con monograma, doble locación (Iglesia + Salón de fiesta), mesa de regalos y estacionamiento privado.</p>
+            <div class="example-features-tags">
+              <span>💒 Doble Locación</span>
+              <span>💍 Monograma</span>
+              <span>🎁 Regalos / CBU</span>
+              <span>📊 Planilla Excel</span>
+            </div>
+            <a href="https://alverto9266-sys.github.io/KiarayTizi/" target="_blank" rel="noopener noreferrer" class="btn-example-action">
+              <span>Ver ejemplo de boda</span>
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6M15 3h6v6M10 14L21 3"/></svg>
+            </a>
+          </div>
+
         </div>
 
       </div>
@@ -161,11 +160,12 @@
               <li>✓ Ubicación del salón con botón GPS a Google Maps</li>
               <li>✓ Código de vestimenta (Dress Code) con notas de color</li>
               <li>✓ Apartado de Regalo con botón para copiar CBU/Alias</li>
-              <li>✓ Confirmación de asistencia directa por WhatsApp</li>
+              <li>✓ <strong>Confirmación de asistencia directa a tu WhatsApp</strong> (los invitados te confirman con un mensaje automático directo a tu celular)</li>
               <li>✓ Botón para agendar en Google Calendar</li>
               <li class="disabled">✗ Sin música de fondo con reproductor</li>
               <li class="disabled">✗ Sin playlist oficial de Spotify</li>
               <li class="disabled">✗ Sin pantalla de apertura (VIP Pass / Sobre)</li>
+              <li class="disabled">✗ Sin planilla de Excel vinculada</li>
             </ul>
 
             <a href="https://wa.me/5492634848795?text=Hola!%20Quiero%20pedir%20el%20Plan%20Básico%20de%20$24.900" target="_blank" rel="noopener noreferrer" class="btn btn-plan">
@@ -193,7 +193,7 @@
               <li>✓ <strong>Música de fondo a elección</strong> con reproductor y ecualizador</li>
               <li>✓ <strong>Fondo interactivo animado</strong> (partículas o destellos)</li>
               <li>✓ <strong>Playlist oficial de Spotify</strong> integrada con botón directo</li>
-              <li>✓ <strong>Formulario de confirmación avanzado</strong> con especificación de menús (celíacos, vegetarianos)</li>
+              <li>✓ <strong>Planilla de Excel vinculada</strong>: se cargan automáticamente todos los datos de las personas (asistencia, menú especial y acompañantes)</li>
               <li>✓ 1 ronda de ajustes y modificaciones incluida</li>
             </ul>
 
@@ -216,7 +216,7 @@
             </div>
 
             <ul class="plan-features">
-              <li><strong>✓ Todo lo del Plan Clásico</strong></li>
+              <li><strong>✓ Todo lo del Plan Clásico (incluye planilla de Excel, música, etc.)</strong></li>
               <li>✓ <strong>Doble ubicación / Itinerario completo</strong> (Ceremonia en Iglesia + Fiesta en Salón con mapa individual)</li>
               <li>✓ <strong>Apertura con monograma y sello de lacre virtual</strong></li>
               <li>✓ <strong>Mesa de regalos completa</strong> con datos bancarios detallados</li>
